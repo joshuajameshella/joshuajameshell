@@ -1,0 +1,57 @@
+
+.profile {
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 30%;
+  background-color: #c0e3e7;
+  color: rgb(50, 50, 50);
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.profile-photo {
+  position: relative;
+  width: 150px;
+  padding: 30px;
+}
+
+.profile-title {
+  position: relative;
+  float: left;
+  font-size: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.profile-subtitle {
+  position: relative;
+  float: left;
+  font-size: 17px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.profile-contact {
+  position: relative;
+  float: left;
+  width: calc(100% - 40px);
+  background-color: #fff;
+  margin: 20px 0px 0px 0px;
+  padding: 30px 20px 30px 20px;
+}
+
+/* responsive container for screen sizes smaller than 1000px */
+@media (max-width: 1000px) {
+    .profile {
+      position: relative;
+      float: left;
+      text-align: center;
+      width: 100%;
+      background-color: #c0e3e7;
+      color: rgb(50, 50, 50);
+      font-family: 'Open Sans', sans-serif;
+    }
+}

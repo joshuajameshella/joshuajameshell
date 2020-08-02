@@ -1,5 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
+  max-width: 1000px;
+  width: 80vw;
+  margin: 50px 10vw 0px 10vw;
+  padding: 0px 0px 0px 0px;
   font-family: sans-serif;
+  background-color: rgba(0,0,0,0.1);
 }
