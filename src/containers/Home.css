@@ -1,0 +1,38 @@
+
+/* Page level styling */
+.home {
+  text-align: center;
+  color: rgb(100, 100, 100);
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+}
+
+
+/*  Profile container styling. Used to hold the information used in the
+    introduction section of the webpage.
+*/
+.profile-container {
+  background-color: #fff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.profile-photo {
+  position: relative;
+  width: 150px;
+  padding: 30px;
+}
+
+.profile-title {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.profile-intro {
+  position: relative;
+  font-weight: 300;
+  padding: 60px 0px 60px 0px;
+  line-height: 1.75;
+  border-top: 1px solid rgb(200, 200, 200);
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
