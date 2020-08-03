@@ -5,9 +5,11 @@ import './NavBar.css';
 class NavBar extends Component {
   render() {
     return (
-      <div className="navbar">
-
-      </div>
+      <nav>
+        <ul >
+          <li><a href="#" class="nav-selections">Home</a></li>
+        </ul>
+      </nav>
     );
   }
 }

@@ -8,6 +8,9 @@ const imgLink = "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShort
 // Link to CV - shared on google drive
 const resumeLink = "https://drive.google.com/file/d/1IP22AdlIERIuQ-c1-KcoriiXPPUZOhVV/view"
 
+
+// Profile is the 'summary' component shown fixed on the web page. It displays a quick overview of
+// myself, and an option to download a PDF version of the resume.
 class Profile extends Component {
   render() {
     return (
@@ -17,7 +20,7 @@ class Profile extends Component {
         <p className="profile-subtitle">Software Developer</p>
 
         <div className="profile-contact">
-          <Button variant="outlined" color="primary" onClick={() => window.open(resumeLink, "_blank")}>
+          <Button id="download-resume-button" variant="outlined" color="primary" onClick={() => window.open(resumeLink, "_blank")}>
             DOWNLOAD CV
           </Button>
         </div>
@@ -25,6 +28,5 @@ class Profile extends Component {
     );
   }
 }
-
 
 export default Profile;

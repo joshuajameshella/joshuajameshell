@@ -1,9 +1,8 @@
 
 .profile {
-  position: relative;
-  float: left;
   text-align: center;
   width: 30%;
+  float: left;
   background-color: #c0e3e7;
   color: rgb(50, 50, 50);
   font-family: 'Open Sans', sans-serif;
@@ -11,14 +10,11 @@
 }
 
 .profile-photo {
-  position: relative;
   width: 150px;
   padding: 30px;
 }
 
 .profile-title {
-  position: relative;
-  float: left;
   font-size: 20px;
   width: 100%;
   text-transform: uppercase;
@@ -26,8 +22,6 @@
 }
 
 .profile-subtitle {
-  position: relative;
-  float: left;
   font-size: 17px;
   width: 100%;
   text-transform: uppercase;
@@ -35,8 +29,6 @@
 }
 
 .profile-contact {
-  position: relative;
-  float: left;
   width: calc(100% - 40px);
   background-color: #fff;
   margin: 20px 0px 0px 0px;
@@ -46,12 +38,11 @@
 /* responsive container for screen sizes smaller than 1000px */
 @media (max-width: 1000px) {
     .profile {
-      position: relative;
-      float: left;
       text-align: center;
       width: 100%;
       background-color: #c0e3e7;
       color: rgb(50, 50, 50);
       font-family: 'Open Sans', sans-serif;
+      margin: 0px 0px 20px 0px;
     }
 }
