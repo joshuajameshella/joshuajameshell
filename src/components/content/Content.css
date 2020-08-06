@@ -1,8 +1,87 @@
+
 .content {
-  position: relative;
+  text-align: left;
+  width: calc(70% - 140px);
+  float: right;
+  background-color: #fff;
+  padding: 30px 50px 30px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgb(50, 50, 50);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-header {
+  font-size: 25px;
+}
+
+.content-subheader {
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+}
+
+.content-body {
+  font-size: 15px;
+  padding: 20px 0px 0px 0px;
+  line-height: 2.25;
+}
+
+.content-break {
+  padding: 0px 0px 40px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.content-divider {
   float: left;
-  width: calc(100%);
-  height: 500px;
-  background-color: rgba(100,100,100,0.2);
-  margin: 20px 0px 0px 0px;
+  width: calc(50% - 20px);
+  padding: 40px 20px 0px 0px;
+}
+
+.content-divider-left {
+  float: left;
+  width: calc(50% - 20px);
+  padding: 40px 0px 0px 20px;
+}
+.content-divider-right {
+  float: left;
+  width: calc(50% - 20px);
+  padding: 40px 0px 0px 20px;
+}
+
+
+/* responsive container for screen sizes smaller than 1000px */
+@media (max-width: 1000px) {
+    .content {
+      text-align: center;
+      width: calc(100% - 40px);
+      float: right;
+      background-color: #fff;
+      padding: 30px 20px 30px 20px;
+      border: 1px solid rgba(0,0,0,0.2);
+      color: rgb(50, 50, 50);
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .content-divider {
+      float: left;
+      text-align: left;
+      width: calc(50% - 40px);
+      padding: 0px 20px 0px 20px;
+    }
+}
+
+
+/* responsive container for screen sizes smaller than 800px */
+@media (max-width: 800px) {
+    .content-divider {
+      float: left;
+      text-align: left;
+      padding-left: calc((100% - 250px) / 2);
+      padding-right: calc((100% - 250px) / 2);
+      min-width: 250px;
+    }
+    .content-subheader {
+      font-size: 18px;
+      color: rgb(75, 75, 75);
+      margin-top: 50px;
+    }
 }

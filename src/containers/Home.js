@@ -9,14 +9,11 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-
         <Profile />
         <Content />
-
       </div>
     );
   }
 }
-
 
 export default Home;
