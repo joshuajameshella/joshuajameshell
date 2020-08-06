@@ -1,0 +1,19 @@
+
+.full-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #c0e3e7;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #82b5ba;
+  margin: 15px 0px 15px 10px;
+}
+.empty-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #82b5ba;
+  margin: 15px 0px 15px 10px;
+}

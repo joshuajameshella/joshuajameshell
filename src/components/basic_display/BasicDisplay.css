@@ -10,6 +10,7 @@
 
 .basic-display-left {
   width: 40%;
+  height: 40px;
   float: left;
   font-size: 12px;
   text-transform: uppercase;
@@ -17,13 +18,14 @@
 }
 .basic-display-right {
   width: 60%;
+  height: 40px;
   float: left;
   font-size: 12px;
 }
 
 
 /* responsive container for screen sizes smaller than 800px */
-@media (max-width: 800px) {
+@media (max-width: 1285px) {
   .basic-display-right {
     width: 60%;
     text-align: right;

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import BasicDisplay from '../basic_display/BasicDisplay';
+import DotDisplay from '../dot_display/DotDisplay';
 import './Content.css';
 import { professionalIntro, personalIntro } from './TextBody';
-
 
 
 
 function PersonalInfo() {
   return (
     <div className="content-divider-left">
-      <h2 className="content-subheader">Personal Information</h2>
+      <h2 className="content-section-title">Personal Information</h2>
       <BasicDisplay title="Full Name" body="Josh Hellawell"/>
       <BasicDisplay title="D.O.B" body="3rd February 1996"/>
       <BasicDisplay title="Email" body="josh@hellawell.co.uk"/>
@@ -18,17 +18,30 @@ function PersonalInfo() {
   );
 }
 
-function PersonalInfo2() {
+function ProfessionalSkills() {
   return (
     <div className="content-divider-right">
-      <h2 className="content-subheader">Personal Information</h2>
-      <BasicDisplay title="Full Name" body="Josh Hellawell"/>
-      <BasicDisplay title="D.O.B" body="3rd February 1996"/>
-      <BasicDisplay title="Email" body="josh@hellawell.co.uk"/>
-      <BasicDisplay title="Mobile" body="(+44) 7816 048 017"/>
+      <h2 className="content-section-title">Software Languages</h2>
+      <DotDisplay title="Go" skillLevel={3}/>
+      <DotDisplay title="React" skillLevel={3}/>
+      <DotDisplay title="Javascript" skillLevel={2}/>
+      <DotDisplay title="Python" skillLevel={1}/>
     </div>
   );
 }
+
+function TechnologySkills() {
+  return (
+    <div className="content-divider-right">
+      <h2 className="content-section-title">Technology Skills</h2>
+      <DotDisplay title="MySQL" skillLevel={3}/>
+      <DotDisplay title="Git" skillLevel={3}/>
+      <DotDisplay title="AWS" skillLevel={1}/>
+      <DotDisplay title="Jenkins" skillLevel={1}/>
+    </div>
+  );
+}
+
 
 // Content is the 'introduction' component of the webpage.
 // It provides an entry point for the user.
@@ -43,9 +56,10 @@ class Content extends Component {
         <div className="content-break" />
 
         <PersonalInfo />
-        <PersonalInfo2 />
+        <ProfessionalSkills />
 
-
+        <PersonalInfo />
+        <TechnologySkills />
 
       </div>
     );

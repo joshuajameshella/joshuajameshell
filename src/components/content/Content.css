@@ -5,6 +5,7 @@
   float: right;
   background-color: #fff;
   padding: 30px 50px 30px 50px;
+  margin: 0px 0px 50px 0px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: rgb(50, 50, 50);
   font-family: 'Open Sans', sans-serif;
@@ -14,37 +15,53 @@
   font-size: 25px;
 }
 
-.content-subheader {
-  font-size: 18px;
-  color: rgb(75, 75, 75);
-}
-
 .content-body {
   font-size: 15px;
   padding: 20px 0px 0px 0px;
   line-height: 2.25;
 }
 
+/* divider */
 .content-break {
   padding: 0px 0px 40px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1)
 }
 
-.content-divider {
-  float: left;
-  width: calc(50% - 20px);
-  padding: 40px 20px 0px 0px;
-}
 
+/* Styling info for the 'skills' sections */
 .content-divider-left {
   float: left;
-  width: calc(50% - 20px);
+  width: 250px;
   padding: 40px 0px 0px 20px;
 }
 .content-divider-right {
-  float: left;
-  width: calc(50% - 20px);
-  padding: 40px 0px 0px 20px;
+  float: right;
+  width: 250px;
+  padding: 40px 0px 0px 40px;
+}
+.content-section-title {
+  font-size: 18px;
+  text-align: left;
+  color: rgb(75, 75, 75);
+}
+
+
+/* responsive container for screen sizes smaller than 1285px */
+@media (max-width: 1285px) {
+  .content-divider-left {
+    float: left;
+    width: 320px;
+    margin-left: calc((100% - 320px) / 2);
+    margin-right: calc((100% - 320px) / 2);
+    padding: 40px 0px 0px 0px;
+  }
+  .content-divider-right {
+    float: left;
+    width: 320px;
+    margin-left: calc((100% - 320px) / 2);
+    margin-right: calc((100% - 320px) / 2);
+    padding: 40px 0px 0px 0px;
+  }
 }
 
 

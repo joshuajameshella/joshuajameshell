@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import './BasicDisplay.css';
 
 
-// Content is the 'introduction' component of the webpage.
-// It provides an entry point for the user.
+// BasicDisplay is the component used to lay out the basic text Information
+// shown on the landing page.
 class BasicDisplay extends Component {
   render() {
     return (
@@ -12,11 +12,9 @@ class BasicDisplay extends Component {
         <div className="basic-display-left">
           <p>{this.props.title}</p>
         </div>
-
         <div className="basic-display-right">
           <p>{this.props.body}</p>
         </div>
-
       </div>
     );
   }
