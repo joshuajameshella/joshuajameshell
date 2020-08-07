@@ -12,7 +12,10 @@ class Timeline extends Component {
         <div className="timeline-point" />
         <div className="timeline-text-container">
           <p className="timeline-title">{this.props.data.name}</p>
-          <img src={this.props.data.image} alt={"company logo"} className="timeline-image" />
+          {this.props.data.image ?
+            <img src={this.props.data.image} alt={"company logo"} className="timeline-image" />
+            : ''
+          }
           <p className="timeline-date">{this.props.data.date}</p>
 
           {this.props.data.description.length > 0 ?

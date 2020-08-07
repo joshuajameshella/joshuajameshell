@@ -29,7 +29,7 @@
   width: 100%;
   float: left;
   color: rgb(100, 100, 100);
-  margin: 49.5px 0px 5px 20px;
+  margin: 49.5px 0px 10px 20px;
 }
 
 .timeline-date {
@@ -37,7 +37,7 @@
   float: left;
   font-size: 12px;
   color: rgb(100, 100, 100);
-  margin: -10px 0px 15px 20px;
+  margin: -0px 0px 15px 20px;
 }
 
 .timeline-image {
