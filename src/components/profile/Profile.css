@@ -39,6 +39,7 @@
 /* responsive container for screen sizes smaller than 1000px */
 @media (max-width: 1000px) {
     .profile {
+      position: relative;
       text-align: center;
       width: 100%;
       background-color: #c0e3e7;

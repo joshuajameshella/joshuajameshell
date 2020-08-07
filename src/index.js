@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Home from './containers/Home';
+import Intro from './containers/Intro/Intro';
 
 import './index.css';
 
 ReactDOM.render(
   <div className="container">
-    <Home />
+    <Intro />
   </div>,
   document.getElementById('root')
 );
