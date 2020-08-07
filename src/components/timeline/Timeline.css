@@ -37,7 +37,12 @@
   float: left;
   font-size: 12px;
   color: rgb(100, 100, 100);
-  margin: 5px 0px 15px 20px;
+  margin: -10px 0px 15px 20px;
+}
+
+.timeline-image {
+  margin: -15px 0px 15px 20px;
+  width: 100px;
 }
 
 .timeline-body {
@@ -46,4 +51,21 @@
   font-size: 12px;
   color: rgb(100, 100, 100);
   margin: 5px 0px 5px 20px;
+}
+
+.timeline-subheader {
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  font-weight: bolder;
+  color: rgb(100, 100, 100);
+  margin: 12px 0px 5px 20px;
+}
+
+.timeline-bulletpoint {
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  color: rgb(100, 100, 100);
+  margin: 0px 0px 0px 20px;
 }

@@ -12,10 +12,21 @@ class Timeline extends Component {
         <div className="timeline-point" />
         <div className="timeline-text-container">
           <p className="timeline-title">{this.props.data.name}</p>
+          <img src={this.props.data.image} alt={"company logo"} className="timeline-image" />
           <p className="timeline-date">{this.props.data.date}</p>
-          {this.props.data.description.map(item =>
-            <p key={item} className="timeline-body">{item}</p>
-          )}
+
+          {this.props.data.description.length > 0 ?
+            <React.Fragment>
+              {this.props.data.description.map(item =>
+                <p key={item} className="timeline-body">{item}</p>
+              )}
+            </React.Fragment>
+            :
+            <React.Fragment>
+              {this.props.data.component}
+            </React.Fragment>
+          }
+
         </div>
       </div>
     );

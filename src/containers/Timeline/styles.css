@@ -1,0 +1,25 @@
+
+.timeline-content {
+  text-align: left;
+  width: calc(70% - 140px);
+  float: right;
+  background-color: #fff;
+  padding: 30px 50px 30px 50px;
+  margin: 0px 0px 50px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgb(50, 50, 50);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* responsive container for screen sizes smaller than 1000px */
+@media (max-width: 1000px) {
+    .timeline-content {
+      width: calc(100% - 40px);
+      float: right;
+      background-color: #fff;
+      padding: 30px 20px 30px 20px;
+      border: 1px solid rgba(0,0,0,0.2);
+      color: rgb(50, 50, 50);
+      font-family: 'Open Sans', sans-serif;
+    }
+}
