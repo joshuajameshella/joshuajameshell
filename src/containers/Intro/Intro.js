@@ -7,7 +7,7 @@ import IconDisplay from '../../components/icon_display/IconDisplay';
 import { professionalIntro, personalIntro } from './TextBody';
 import './styles.css';
 
-
+// PersonalInfo displays the basic information about me, including name and contact info
 function PersonalInfo() {
   return (
     <div className="content-divider-left">
@@ -20,9 +20,23 @@ function PersonalInfo() {
   );
 }
 
-function ProfessionalSkills() {
+// PersonalHobbies is more info about myself, displayed via icons
+function PersonalHobbies() {
   return (
     <div className="content-divider-right">
+      <h2 className="content-section-title">Personal Hobbies</h2>
+      <IconDisplay title="Cycling" icon={{image: "https://static.thenounproject.com/png/215-200.png", description: "cycling icon"}}/>
+      <IconDisplay title="Snowboarding" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-DbMMEj8A1uk9LBriVnoNMn9ZtD-jK_Wk0w&usqp=CAU", description: "snowboarding icon"}}/>
+      <IconDisplay title="Programming" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZvi26Y0im8MFpmLe__3nZT-nYT0363sc-mw&usqp=CAU", description: "programming icon"}}/>
+      <IconDisplay title="Hiking" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBU5wnx8caGA4jjGIvZuznHBf03GGqFeWkbQ&usqp=CAU", description: "hiking icon"}}/>
+    </div>
+  );
+}
+
+// ProfessionalSkills shows the programming languages and skill levels I have in them
+function ProfessionalSkills() {
+  return (
+    <div className="content-divider-left">
       <h2 className="content-section-title">Programming Languages</h2>
       <DotDisplay title="Go" skillLevel={3}/>
       <DotDisplay title="Javascript (ES6)" skillLevel={3}/>
@@ -32,21 +46,10 @@ function ProfessionalSkills() {
   );
 }
 
-function PersonalHobbies() {
-  return (
-    <div className="content-divider-right">
-      <h2 className="content-section-title">Personal Hobbies</h2>
-      <IconDisplay title="Cycling" icon={{image: "https://static.thenounproject.com/png/215-200.png", description: "cycling icon"}}/>
-      <IconDisplay title="Snowboarding" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-DbMMEj8A1uk9LBriVnoNMn9ZtD-jK_Wk0w&usqp=CAU", description: "snowboarding icon"}}/>
-      <IconDisplay title="Programming" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZvi26Y0im8MFpmLe__3nZT-nYT0363sc-mw&usqp=CAU", description: "programming icon"}}/>
-      <IconDisplay title="Reading" icon={{image: "https://static.thenounproject.com/png/7456-200.png", description: "reading icon"}}/>
-    </div>
-  );
-}
-
+// TechnologySkills shows the misc. technology skills I have
 function TechnologySkills() {
   return (
-    <div className="content-divider-left">
+    <div className="content-divider-right">
       <h2 className="content-section-title">Technology Skills</h2>
       <DotDisplay title="React" skillLevel={3}/>
       <DotDisplay title="Git" skillLevel={3}/>
@@ -67,7 +70,6 @@ class Intro extends Component {
         <Profile />
 
         <div className="content">
-
           <h1 className="content-header">Hello, I'm Josh</h1>
           <p className="content-body">{professionalIntro}</p>
           <p className="content-body">{personalIntro}</p>
@@ -77,7 +79,6 @@ class Intro extends Component {
           <PersonalHobbies />
           <ProfessionalSkills />
           <TechnologySkills />
-
         </div>
 
       </div>
