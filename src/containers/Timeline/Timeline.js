@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import TimelineDisplay from '../../components/timeline/Timeline';
 import HMG from './employer_info/hmg/HMG';
 import Icelolly from './employer_info/icelolly/Icelolly';
+import HighSchool from './education_info/HighSchool/HighSchool';
+import University from './education_info/University/University';
 import './styles.css';
 
 
 // The following objects contain the data which will be inserted into the 'Education' timeline
 const highSchool = {
-  name: "Outwood Grange Academy",
+  name: "",
+  image: require("./education_info/HighSchool/outwood.png"),
   date: "2012 - 2014",
-  description: [
-    `I recieved three A-levels from Outwood Grange Academy in 2014 with the following grades:`,
-    'A - Mathematics | B - Physics | B - IT',
-  ]
+  description: [],
+  component: <HighSchool />,
 };
 const university = {
-  name: "University of York",
+  name: "",
+  image: require("./education_info/University/uoy.png"),
   date: "2014 - 2017",
-  description: ["During my time at the University of York, I obtained a Bachelors Degree in Electrical and Electronic Engineering, with a 2:1 grade"]
+  description: [],
+  component: <University />,
 };
 
 

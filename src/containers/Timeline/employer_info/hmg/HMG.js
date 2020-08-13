@@ -4,7 +4,7 @@ import '../../styles.css';
 class HMG extends Component {
   render() {
     return (
-      <div className="">
+      <div>
         <p className="timeline-body">{"Whilst working as a software engineer for HMG, my responsibilities included managing greenfield software projects from their inception, writing thorough documentation and setting both personal and team goals in the effort of continuous improvements. I successfully completed 4 projects during the two years I spent working here, and listed below are the main technologies I have used to achieve this."}</p>
 
         <p className="timeline-subheader">{"Full Stack Web Developer"}</p>
