@@ -25,10 +25,10 @@ function PersonalHobbies() {
   return (
     <div className="content-divider-right">
       <h2 className="content-section-title">Personal Hobbies</h2>
-      <IconDisplay title="Cycling" icon={{image: "https://static.thenounproject.com/png/215-200.png", description: "cycling icon"}}/>
-      <IconDisplay title="Snowboarding" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-DbMMEj8A1uk9LBriVnoNMn9ZtD-jK_Wk0w&usqp=CAU", description: "snowboarding icon"}}/>
-      <IconDisplay title="Programming" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZvi26Y0im8MFpmLe__3nZT-nYT0363sc-mw&usqp=CAU", description: "programming icon"}}/>
-      <IconDisplay title="Hiking" icon={{image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBU5wnx8caGA4jjGIvZuznHBf03GGqFeWkbQ&usqp=CAU", description: "hiking icon"}}/>
+      <IconDisplay title="Cycling" icon={{image: require("./icons/cycling.png"), description: "cycling icon"}}/>
+      <IconDisplay title="Snowboarding" icon={{image: require("./icons/snowboarding.png"), description: "snowboarding icon"}}/>
+      <IconDisplay title="Programming" icon={{image: require("./icons/programming.png"), description: "programming icon"}}/>
+      <IconDisplay title="Hiking" icon={{image: require("./icons/hiking.png"), description: "hiking icon"}}/>
     </div>
   );
 }

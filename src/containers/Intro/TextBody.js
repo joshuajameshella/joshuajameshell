@@ -1,7 +1,7 @@
 
 // Text used in the introduction section of the profile
 export const professionalIntro = `
-  I'm a software engineer, with a degree in Electronic Engineering from the University of York. Currently, I'm working in Leeds as a software developer with icelolly.com. My job primarily focuses on creating and managing the Golang backend services used by the platform. I also have experience creating full stack MERN applications.
+  I'm a software engineer, with a degree in Electronic Engineering from the University of York. Currently, I'm working in Leeds as a software developer with icelolly.com. My job primarily focuses on creating and managing the Golang backend services used by the platform. I also have industry experience creating and deploying full stack MERN applications, as well as hardware design and integration.
 `;
 // Text used in the introduction section of the profile
 export const personalIntro = `
