@@ -1,4 +1,16 @@
 
+.contact-icon-holder {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.contact-icon {
+  float: left;
+  width: 40px;
+  padding-right: calc(100% - 50px);
+}
+
 /* responsive container for screen sizes smaller than 1000px */
 @media (max-width: 1000px) {
 
