@@ -24,7 +24,7 @@ const university = {
 };
 
 
-// The following objects contain the data which will be inserted into the 'Education' timeline
+// The following objects contain the data which will be inserted into the 'Work History' timeline
 const hmg = {
   name: "",
   image: require("./employer_info/hmg/hmg.png"),
